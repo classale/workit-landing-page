@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Fraunces:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+
+@keyframes rotate {
+    from {
+        transform:  translateY(50%) rotate(0deg);
+    }
+
+    to {
+        transform:  translateY(50%) rotate(360deg);
+    }
+}
+
+* {
+    font-family: "Fraunces", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h1 *, h2, h2 *, h3, h3 *, h4, h4 *, h5, h5 *, h6, h6 * {
+    font-weight: 600;
+}
+
+a {
+    font-weight: bold;
+}
+
+header, nav {
+    color: white;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background-color: #44FFA1;
+    border: 2px solid #44FFA1;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #44FFA1;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+u {
+    text-decoration-color: #44FFA1;
+}
+
+.logo {
+    background-image: url("./assets/logo.svg");
+    filter: invert(1);
+}
+
+nav {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: calc(100%-80px);
+    display: flex;
+    justify-content: space-between;
+    background-color: #24053E;
+}
+
+header {
+    width: 150%;
+    transform: translateX(-15%);
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+header > .title > h1 {
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title > button {
+    width: max-content;
+}
+
+header {
+    background-color: #24053E;
+    margin-bottom: 128px;
+}
+
+.phone {
+    width: 50%;
+    transform: translateY(50%);
+}
+
+.phone:active {
+    animation: rotate 1s;
+}
+
+header button {
+    margin-top: 15px;
+}
+
+.points {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.points > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+}
+
+.points > div > h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.count {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10000000000000px;
+    margin-bottom: 2rem;
+}
+
+.man {
+    border-radius: 2000000000000000000px;
+    background-color: #44FFA1;
+}
+
+.opinion {
+    position: relative;
+    display: flex;
+    margin: 100px;
+    margin-bottom: 200px;
+    height: 50vh;
+}
+
+.opinion img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+}
+
+.opinion > div {
+    background-color: #24053E;
+    position: absolute;
+    width: 50%;
+    bottom: -25%;
+    left: 30%;
+    padding: 3rem;
+    color: white;
+}
+
+.opinion > div > h1, .opinion > div > p {
+    margin-bottom: 2rem;
+
+}
+
+footer {
+    width: calc(100vw - 2rem);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > img {
+    margin-bottom: 2rem;
+}
+
+footer .socials a {
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+}
+
+button, a {
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #44FFA1;
+}
+
+nav a:hover {
+    color: #44FFA1;
+}
